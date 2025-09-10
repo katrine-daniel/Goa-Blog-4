@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Blog - Page 04</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'raleway': ['Verdana', 'sans-serif'],
+                    },
+                    colors: {
+                        'cream': '#FDF6E3',
+                        'brown-custom': '#8B4513',
+                        'brown-light': '#A0522D',
+                        'quote-bg': '#F0E4C4',
+                        'green-custom': '#7cb342',
+                    },
+                    spacing: {
+                        '116': '116vh',
+                        '15': '3.75rem',
+                        '68': '17rem',
+                        '69': '17.25rem',
+                        '80': '20rem',
+                    },
+                    backgroundImage: {
+                        'palace': "url('img/top.png')",
+                        'fort': "url('img/fort.png')",
+                        'dest-1': "url('img/Rectangle 4290.png')",
+                        'dest-2': "url('img/Rectangle 4288.png')",
+                        'dest-3': "url('img/Rectangle 4287.png')",
+                        'dest-4': "url('img/Rectangle 4289.png')",
+                        'dest-5': "url('img/Group 3565 (1).png')",
+                        'bottom-img': "url('img/imae 3.png')",
+                        'video-1': "url('img/3.png')",
+                        'video-2': "url('img/1.png')",
+                        'video-3': "url('img/2.png')",
+                        'video-4': "url('img/4.png')",
+                        'gradient-overlay': 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))',
+                        'gradient-brown': 'linear-gradient(135deg, rgba(212, 149, 106, 0.2) 100%, rgba(184, 120, 74, 0.6) 100%, rgba(168, 106, 58, 0.8) 100%)',
+                        'gradient-main': 'linear-gradient(#f9edcc8e 50%, #d6ccb1 100%)',
+                    },
+                    fontSize: {
+                        '9xl': '8rem',
+                        '10xl': '10rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-raleway bg-cream text-gray-800">
+    <!-- Hero Section -->
+    <div class="relative w-full overflow-hidden h-screen min-h-screen">
+
+        <!-- Background Image - Using Tailwind classes -->
+        <div class="absolute inset-0 w-full h-116 -top-24 z-0 bg-palace bg-cover bg-center bg-no-repeat"></div>
+        <!-- Main Title -->
+        <h1
+            class="absolute top-72 md:top-80 lg:top-96 left-12 lg:left-15 text-white text-xl md:text-2xl lg:text-5xl font-semibold z-20 max-w-[60%] pr-8 leading-relaxed tracking-wide">
+            Goin’ Goan Chef by Chef | Goa | Bunny Suraiya
+        </h1>
+
+        <!-- Desktop Video Cards with Vertical Loop Scroll -->
+        <div class="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:block">
+            <!-- Up Arrow -->
+            <button id="scrollUp"
+                class="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center mb-4 transition-all duration-300 border border-white/20 hover:border-white/40">
+                <svg class="w-5 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </svg>
+            </button>
+
+            <!-- Scrollable Container -->
+            <div id="videoContainer" class="h-[620px] overflow-hidden">
+                <div id="videoScroll" class="flex flex-col gap-5 transition-transform duration-500 ease-in-out">
+                    <!-- Video Card 1 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-1 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                             Reinventing the WAY, we travel | Goa | Shikha Tripathi 
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-2 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                           The Best places for sundowners | Goa | Pallavi Pasricha
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-3 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                            Goa’s unique Tripurari Poornima celebrations  | Goa   | Manjulika Pramod 
+                        </div>
+                    </div>
+
+                    <!-- Video Card 4 -->
+                    <div
+                        class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-4 bg-cover bg-center bg-blend-overlay">
+                        <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                            A cruise into the sunset | Goa | Anuradha Goyal
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Down Arrow -->
+            <button id="scrollDown"
+                class="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center mb-4 transition-all duration-300 border border-white/20 hover:border-white/40">
+                <svg class="w-5 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+
+        <!-- Mobile Video Cards -->
+        <div class="lg:hidden absolute bottom-5 left-0 right-0 px-5">
+            <div
+                class="flex gap-5 overflow-x-auto pb-2 scrollbar-thin scrollbar-track-white/10 scrollbar-thumb-white/30">
+                <!-- Mobile Video Card 1 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-1 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        Reinventing the WAY, we travel | Goa | Shikha Tripathi 
+                    </div>
+                </div>
+
+                <!-- Mobile Video Card 2 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-2 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+
+                    <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                        Goa’s unique Tripurari Poornima celebrations | Goa | Manjulika Pramod
+                    </div>
+                </div>
+
+                <!-- Mobile Video Card 3 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        Goin' Goan Chef by Chef | Goa | Bunny Suraiya
+                    </div>
+                </div>
+                <!-- Mobile Video Card 4 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        A cruise into the sunset | Goa | Anuradha Goyal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Explore Destinations Section -->
+    <section class="bg-gradient-to-b from-cream to-cream py-20 px-10 relative">
+        <div
+            class="destinations-container max-w-7xl mx-auto relative px-8 lg:px-12 xl:px-16 pb- transition-all duration-300">
+            <h2
+                class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-10 leading-tight font-serif">
+                EXPLORE DESTINATIONS
+            </h2>
+
+            <!-- Single responsive container -->
+            <div class="mb-10">
+                <!-- Mobile: Horizontal scroll, Desktop: Flex wrap -->
+                <div class="overflow-x-auto lg:overflow-x-visible pb-4">
+                    <div class="flex gap-5 min-w-max lg:min-w-0 px-4 lg:px-0 lg:justify-center lg:flex-wrap">
+                        <!-- Destination Card 1 - Goa -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink -translate-y-4 scale-110 shadow-2xl shadow-blue-500/25 brightness-110 mb-4 group">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-xl bg-dest-1 bg-cover bg-center">
+                                <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-20">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20 scale-110"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.3);">
+                                    GOA
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Destination Card 2 - Udaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-2 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    UDAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 3 - Jaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-3 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    JAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 4 - Rishikesh -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-4 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    RISHIKESH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Indicators -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <div
+                        class="nav-dot active w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0">
+                        01
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        02
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+
+                        03
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        04
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section with Sidebar -->
+    <div class="bg-gradient-to-b from-[#f9edcc8e] to-[#d6ccb1] px-2 md:px-5 pb-12 pt-2">
+        <div class="max-w-7xl mx-auto flex gap-6">
+            <!-- Main Content -->
+            <section class="flex-1 bg-white p-5 md:p-8 rounded-lg mb-6 shadow-lg">
+                <h2 class="text-center text-[22px] md:text-[28px] font-semibold text-[#8B4513] mb-2 font-serif">
+                    Goa is best experienced through its cuisine prepared by local Goan chefs and families
+                    <h4
+                        class="text-center text-xs text-black mt-2 mb-6 pt-3 border-t border-gray-200 font-sans font-normal">
+                        👤Bunny Suraiya 🕐 5 min
+                    </h4>
+                    <!-- Fort Image -->
+                    <div class="w-full h-[300px] md:h-[450px] rounded-lg bg-cover bg-center my-6 shadow-lg"
+                        style="background-image: url('img/fort.png');"></div>
+
+                    <!-- Text content with floating image -->
+                    <div class="text-[14px] leading-relaxed text-justify">
+                        <!-- Floating Image -->
+                        <div class="w-full max-w-[300px] h-[200px] md:h-[280px] rounded-lg bg-cover bg-center shadow-lg mb-4 float-right ml-6 relative"
+                            style="background-image: url('img/image\ 134.png');">
+
+                        </div>
+
+                        <p class="mb-4">
+                            My favourite time to visit Goa is during the monsoon. The land is clean and green, the
+                            breeze is cool, there are few tourists and Goa returns to the Goans. The two great rivers,
+                            the Mandovi and Zuari, flow in stately progress past the villages and towns of Goa, high and
+                            swollen, oceanic in their size and majesty. True, many of the beach shacks – and some
+                            restaurants – are closed, but that’s a small price to pay for the peace and quiet of a land
+                            that has returned to its people. </p>
+                        <p class="mb-4">
+                            Many people ask, “What do you do in Goa when there are no live bands and no parties?” My
+                            answer is simple. I go there to enjoy the Goan way of life that is fast disappearing, and
+                            this is best experienced through its cuisine – not in fancy restaurants, the likes of which
+                            I can visit in any city, but as prepared by Goan chefs in their own homes, or at least by
+                            Goan families preparing traditional fare. </p>
+                        <p class="mb-4">
+                            These experiences are the essence of Goa for me, and nowhere is too far or too out of the
+                            way to go. Several of the chefs have become friends of mine over the years, a fact that adds
+                            immeasurably to the experience. I get to revisit a friend and eat great food prepared with
+                            love – what could be more heart-warming than that?
+                        </p>
+
+                        <p class="mb-4"> One evening I went to Pisco - by The Beach, a stylish restaurant located on
+                            Anjuna Beach where I chose a table in a quiet corner and happily sat with my friend watching
+                            the horizon turn gold. They even have hammock style seating right on the sand in front of
+                            the restaurant, but one needs to reach early to get those coveted places. I went for their
+                            signature cocktails like Pisco Sour and Pisco punch that literally lend a punch to the
+                            evening. There are different menus for the day and night with dishes ranging from tacos and
+                            pizzas to burgers, sandwiches and seafood.
+                        </p>
+                        
+                        <p class="mb-4">
+                            From north Goa, where I base myself on the bank of the mighty Mandovi, it takes about an
+                            hour to drive down to the deep south of Majorda village, where my friend Simon Hayward runs
+                            his elegant home-hotel, Vivenda dos Palhacos (House of Clowns), in a charming old-fashioned
+                            bungalow, albeit modernised with a swimming pool and all the mod cons one needs. Simon is a
+                            foodie and a great cook and I can authoritatively state that his Beef Wellington is better
+                            than that of Harrods in London. Meat you can cut with a fork, in pastry that is perfection
+                            itself. </p>
+
+                        <p class="mb-4">
+                            Closer to home, but still down south, in the village of Raia, sited amid fields of green, is
+                            Margarida Tavora ’s loving tribute to her late husband, Chef Fernando. Fernando’s
+                            Nostalgia is a large space filled with memorabilia, knick-knacks, and eclectic oddities that
+                            recall a happy married life before Fernando was cruelly snatched away. Nostalgia keeps the
+                            culinary talent of Fernando alive, with dishes you won’t find anywhere else: like Suckling
+                            Pig Cabidela and homemade Bolo San Rival – that wondrous almond cake that, as its name
+                            suggests, is truly unrivalled in taste. </p>
+                            <div class="text-center my-8 py-5">
+                            <img src="img/Add_banner (5).png" alt="Advertisement"
+                                class="max-w-full h-auto w-full lg:w-30 lg:h-22 rounded mx-auto">
+                        </div>
+
+                        <p class="mb-4">
+                            In Panjim, my hands-down favourite is Ferradura (Horse Shoe), a charming townhouse in the
+                            Latin Quarter, where Chef Vasco Silveira excels at Luso, or Portuguese, cuisine. Nothing is
+                            cooked until you arrive and it’s all done while you are there by Vasco himself. I never
+                            order from the menu, preferring instead to ask Vasco to prepare whatever he chooses. While
+                            you have a drink, he goes into his open kitchen and emerges a while later with the most
+                            delectable Clams in White Wine, plump Prawns in Butter Garlic and the most divine Red
+                            Snapper ever. No spices, no chillies – nothing but the great taste of seafood freshly cooked
+                            by a master chef. </p>
+
+                        <p class="mb-4">
+                            Also in Panjim is Godinho’s, the iconic restaurant that’s been owned and run by the Godinho
+                            family since 1938, delighting Portuguese and Goan palates for closing on 85 years – and now
+                            mine too. No visit to Goa is complete without at least a couple of visits to Godinho’s for
+                            its Beef Fry, Beef Steak, Pork Roast, and Masala Tisriyo (clams) eaten with Poi, the
+                            stretchy kulcha-like Goan bread or Unde, the crusty bread that is India’s answer to the
+                            French baguette. A must-order at Godinho’s is the intriguingly-named Fish Curry Rice Beef
+                            Chilly Fry, which comes as four separate dishes for the price of one. Great taste at
+                            unbeatable value. </p>
+
+                        <p class="mb-4">
+                            Not too far away, at the foot of Our Lady of the Immaculate Conception, the most beautiful
+                            church in Panjim, is George, more of an eatery than a fine-dining restaurant, famous for its
+                            succulent, medium-rare (you don’t have to specify) Roast Beef and Chonak Butter Garlic.
+                            There is no music here, no TV. This is a place where serious eaters gather for no purpose
+                            other than eating. </p>
+                        <p class="mb-4">
+                            Further north from Panjim, in the village of Arpora, is Cajy’s Bar and Restaurant. A
+                            family-run place, it was founded in 1970 by Cajetan (Cajy) Fernandes and his family
+                            continues to run it today. Grandson Elijgio acts as bartender and front-of-house, his sister
+                            Evelyn performs waitress service with a smile, and the cooking is done by their mother,
+                            phenomenal Philomena, whose Ard Mass (Goan-style ribs) and silken smooth Beef Croquettes are
+                            absolutely  </p>
+                        <p class="mb-4">
+                            These are just a few of my favourite places in Goa. And on every visit, I discover one or
+                            two more. That’s the wonder of this tiny slice of heaven on India’s west coast. And why I
+                            love Goin’ Goan! </p>
+                        <p class="mb-4 font bold">
+                            For table reservations contact:
+
+                            Vivenda dos Palhacos (House of Clowns) @+91 8322881700 | Fernando’s Nostalgia @+91
+                            8322777098 | George @+919822487722
+                            Godinho’s @+919822100315 | Ferradura (Horse Shoe) @+919511720868 | Cajy’s Bar and Restaurant
+                            @+919370437069 </p>
+
+
+
+                        <!-- Clear float -->
+                        <div class="clear-both"></div>
+                    </div>
+            </section>
+
+            <!-- Right Sidebar - Hidden on mobile -->
+            <aside class="hidden lg:block w-80 h-fit sticky top-4">
+                <!-- Ad Banner -->
+                <div class="bg-white rounded-lg overflow-hidden mb-6 shadow-lg">
+                    <img src="img/ad banner.png" alt="Your Spain Escape - QuoteYourRate Ad Banner"
+                        class="w-full h-auto object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200">
+                </div>
+
+
+                <!-- Cities List -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <h3 class="text-lg font-semibold text-gray-800 p-4 border-b border-gray-200">More Cities to Explore
+                    </h3>
+                    <div class="max-h-96 overflow-y-auto custom-scrollbar">
+                        <ul class="divide-y divide-gray-100">
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Traveller’s Tale | Jaipur | Gustasp and Jeroo
+                                    Irani </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur’s royalty and what they
+                                    love about their city | Jaipur | Dharmendar Kanwar </span>
+                            </li>
+
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A Heritage walk through Chhattis Karkhanas | Jaipur
+                                    | Dharmendar Kanwar </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Indigo, The Blue Gold of India | Jaipur | Dharmendar
+                                    Kanwar </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Goa’s unique Tripurari Poornima celebrations | Goa |
+                                    Manjulika Pramod </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
+                                    Tripathi </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">The Best places for sundowners | Goa | Pallavi
+                                    Pasricha </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm"> Goin’ Goan Chef by Chef | Goa | Bunny
+                                    Suraiya </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">A cruise into the sunset | Goa | Anuradha
+                                    Goyal </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen Ward 
+                                     </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai
+                                    Gange! | Rishikesh | Anuradha Goyal </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">A river run for that shot of adrenaline | Rishikesh
+                                    | Delhi Fundos </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm"> A Drop of Divine | Rishikesh | Rishikesh | Shikha
+                                    Tripathi </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">An oasis of serenity | Rishikesh | Shikha Tripathi
+                                </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
+                                    Fundos </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">Mewar on a platter | Udaipur | Manjulika
+                                    Pramod </span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm"> Romancing the lake city | Udaipur | Chitra
+                                    Narayanan </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollContainer = document.getElementById('videoScroll');
+            const scrollUpBtn = document.getElementById('scrollUp');
+            const scrollDownBtn = document.getElementById('scrollDown');
+
+            let currentIndex = 0;
+            const cardHeight = 212; // 48 (h-48) + 20 (gap-5) = 212px
+            const totalCards = 4;
+
+            function updateScroll() {
+                const translateY = -(currentIndex * cardHeight);
+                scrollContainer.style.transform = `translateY(${translateY}px)`;
+            }
+
+            scrollUpBtn.addEventListener('click', function () {
+                currentIndex--;
+
+                // Loop back to bottom when going past the first card
+                if (currentIndex < 0) {
+                    currentIndex = totalCards - 3; // Show last 3 cards (cards 1,2,3 - index 1)
+                }
+
+                updateScroll();
+            });
+
+            scrollDownBtn.addEventListener('click', function () {
+                currentIndex++;
+
+                // Loop back to top when going past the last possible position
+                if (currentIndex > totalCards - 3) { // Can't go beyond showing cards 2,3,4 (index 1)
+                    currentIndex = 0; // Back to showing cards 1,2,3 (index 0)
+                }
+
+                updateScroll();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
